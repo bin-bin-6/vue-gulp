@@ -1,0 +1,32 @@
+{
+  "name": "vue-gulp",
+  "version": "1.0.0",
+  "description": "The vue-gulp mix workFrame",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "puncheung_lai<puncheung_lai@foxmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-asset-rev-edit": "^0.0.15.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header": "^1.8.8",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-make-css-url-version": "^0.0.13",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-remove-use-strict": "^0.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.1.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}

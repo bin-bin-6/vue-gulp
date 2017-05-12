@@ -1,0 +1,175 @@
+@charset "UTF-8";
+html, body {
+  max-width: 960px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: 100%; }
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", Arial, sans-serif;
+  overflow-x: hidden;
+  font-size: 14px !important; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+textarea {
+  resize: none; }
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden; }
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+::-ms-clear, ::-ms-reveal {
+  display: none; }
+
+input[type="tel"], input[type="text"], input[type="password"], textarea {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+[v-cloak] {
+  display: none; }
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.image-box {
+  width: 12rem;
+  height: 12rem;
+  margin: 0 auto;
+  padding: 1rem; }
+  .image-box .logo {
+    width: 100%;
+    height: 100%;
+    display: block; }
+
+.main-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .main-content .power-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0.5rem 0 3.0rem 0;
+    position: relative; }
+    .main-content .power-box .power-word {
+      color: #3AB982;
+      margin-right: 0.5rem; }
+    .main-content .power-box .power-bar {
+      width: 10rem;
+      height: 1rem;
+      position: relative;
+      border-radius: 5rem;
+      background: #fff;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+      .main-content .power-box .power-bar .power-line {
+        position: absolute;
+        border-radius: 5rem;
+        height: 100%;
+        background: #3AB982;
+        -webkit-transition: width 0.5s;
+        transition: width 0.5s; }
+    .main-content .power-box .power-btn {
+      position: absolute;
+      width: 8rem;
+      height: 1.6rem;
+      line-height: 1.6rem;
+      bottom: 0;
+      text-align: center;
+      border-radius: 0.8rem;
+      color: #fff;
+      left: 50%;
+      margin-left: -4rem; }
+      .main-content .power-box .power-btn.noActive {
+        background: #35495E;
+        color: #3AB982; }
+      .main-content .power-box .power-btn.active {
+        background: #3AB982;
+        color: #35495E; }
+  .main-content .shake-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #35495E; }
+    .main-content .shake-box .shake-image {
+      width: 10rem;
+      height: 10rem;
+      background: url("../../images/home/shake.png") no-repeat center center;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      -webkit-animation-timing-function: linear !important;
+      animation-timing-function: linear !important; }

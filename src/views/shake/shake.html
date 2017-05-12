@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vue-shaked</title>
+        <meta charset="UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <meta name="format-detection" content="telphone=no, email=no">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="cache" content="no-cache">
+        <link href="../../assests/lib/animate/animate.css" rel="stylesheet"/>
+        <link href="../../assests/lib/boom/boom.css" rel="stylesheet"/>
+        <link href="./shake.css" rel="stylesheet">
+    </head>
+    <body>
+       <div class="container" id="app" v-cloak>
+           <div class="image-box">
+               <img id="logo" class="logo pulse animated infinite" src="../../images/home/vue.png" alt="loading">
+           </div>
+           <div class="main-content">
+               <div class="power-box">
+                   <div class="power-word">power:</div>
+                   <div class="power-bar">
+                       <div class="power-line" :style="{width:linePrecenter + '%'}"></div>
+                   </div>
+                   <div class="power-btn" :class="[{active:btnActive},{noActive:!btnActive}]" @click="_boom()">BOOM</div>
+               </div>
+               <div class="shake-box">
+                   <div>shake your phone hardly</div>
+                   <div class="shake-image wobble animated infinite"></div>
+               </div>
+           </div>
+       </div>
+    </body>
+    <script src="../../assests/require.js" data-main ="../../assests/router.js" defer async="true"></script>
+</html>

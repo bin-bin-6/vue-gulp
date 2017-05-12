@@ -1,0 +1,56 @@
+@import '../_fn';
+
+html,body{
+    max-width: 960px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: 100%;
+}
+.container{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: $baseFont;
+    overflow-x: hidden;
+    font-size: $baseFontSize !important;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+a{
+    text-decoration:none;
+}
+textarea{
+    resize: none;
+}
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+*,:after,:before{
+    margin:0;
+    padding:0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+::-ms-clear,::-ms-reveal{
+    display: none;
+}
+input[type="tel"],input[type="text"],input[type="password"],textarea{-webkit-appearance:none;border-radius: 0}
+
+[v-cloak] {
+  display: none; 
+}

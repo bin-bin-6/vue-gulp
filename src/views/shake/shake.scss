@@ -1,0 +1,88 @@
+@import '../../assests/styles/_fn';
+@import '../../assests/styles/reset/_reset';
+
+$mainColor:#3AB982;
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.image-box{
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    padding: 1rem;
+    .logo{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+.main-content{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .power-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0 3.0rem 0;
+        position: relative;
+        .power-word{
+            color: $mainColor;
+            margin-right: 0.5rem;
+        }
+        .power-bar{
+            width: 10rem;
+            height: 1rem;
+            position: relative;
+            border-radius: 5rem;
+            background: #fff;
+            overflow: hidden;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+            .power-line{
+                position: absolute;
+                // width: 5rem;
+                border-radius: 5rem;
+                height: 100%;
+                background: $mainColor;
+                transition: width 0.5s;
+            }
+        }
+        .power-btn{
+            position: absolute;
+            width: 8rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+            bottom: 0;
+            text-align: center;
+            border-radius: 0.8rem;
+            color: #fff;
+            left: 50%;
+            margin-left: -4rem;
+            &.noActive{
+                background: #35495E;
+                color: $mainColor;
+            }
+            &.active{
+                background: $mainColor;
+                color: #35495E;
+            }
+        }
+    }
+    .shake-box{
+        flex: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #35495E;
+        .shake-image{
+            width: 10rem;
+            height: 10rem;
+            @include bgImg('../../images/home/shake.png');
+            animation-timing-function: linear !important;
+        }
+    }
+}

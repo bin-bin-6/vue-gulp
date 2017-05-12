@@ -1,0 +1,11 @@
+//page
+$maxWidth:1280px;
+$baseFont:"Microsoft YaHei","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","微软雅黑",Arial,sans-serif;
+$baseFontSize:14px !default;
+$baseFontColor:#f3f3f3 !default;
+$bgColor_blue:#1d2232 !default;
+$bgColor_black:#19181e !default;
+
+//border颜色
+$borderColor_default:#cecece !default;
+$borderColor_darken:darken($borderColor_default,10%) !default;

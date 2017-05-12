@@ -1,0 +1,5 @@
+/** 
+* nhxzfw V1.0.0 
+* Fri May 12 2017 14:14:16 GMT+0800 (中国标准时间)
+*/
+"use strict";function _defineProperty(e,i,n){return i in e?Object.defineProperty(e,i,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[i]=n,e}define(["jquery","vue","des","swiper"],function(e,i,n,t,a){new i({el:"#app",data:{username:"",password:"",loadingSign:!1,tips:""},mounted:function(){var e;new Swiper(".swiper-container",(e={pagination:".swiper-pagination",effect:"flip",grabCursor:!0},_defineProperty(e,"pagination",".swiper-pagination"),_defineProperty(e,"autoplay",3e3),_defineProperty(e,"loop",!0),e))},methods:{_goLogin:function(){this._vaildate()},_vaildate:function(){var e=!0;return this.loadingSign=!1,this.tips="",0==this.username.length?(this.loadingSign=!0,this.tips="please input name ",e=!1):0==this.password.length&&(this.loadingSign=!0,this.tips="please input password ",e=!1),e}}})});
