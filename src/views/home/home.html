@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vue-home</title>
+        <meta charset="UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <meta name="format-detection" content="telphone=no, email=no">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="cache" content="no-cache">
+        <link href="./home.css" rel="stylesheet">
+    </head>
+    <body>
+       <div class="container" id="app" v-cloak>
+           <!--header-search-box begin-->
+           <div v-show="searchShow" class="header-search-box">
+               <div class="search-box">
+                   <input v-bind:class="{focusClass:isFocus}" class="search-input" type="text" @focus="focusInput()" />
+               </div>
+               <div class="search-cancel-btn" @click="endSearch()" >
+                   取消
+               </div>
+           </div>
+           <!--header-search-box end-->
+           <!--header begin-->
+           <header class="header-nav-bar">
+                <div id="headerNav" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide nav-active">精选</div>
+                        <div class="swiper-slide">热点</div>
+                        <div class="swiper-slide">电视剧</div>
+                        <div class="swiper-slide">电影</div>
+                        <div class="swiper-slide">综艺</div>
+                        <div class="swiper-slide">动漫</div>
+                        <div class="swiper-slide">直播</div>
+                        <div class="swiper-slide">资讯</div>
+                        <div class="swiper-slide">娱乐</div>
+                        <div class="swiper-slide">搞笑</div>
+                        <div class="swiper-slide">公益</div>
+                        <div class="swiper-slide">广告</div>
+                    </div>
+                </div>
+            </header>
+            <!--header end-->
+            <section class="search-bar"> 
+                <div class="search-content" @click="startSearch()">欢乐颂</div>
+            </section>
+            <div class="main-container">
+                <!--banner begin-->
+                <section class="banner-bar">
+                    <div id="bannerBar" class='swiper-container'>
+                        <div class='swiper-wrapper'>
+                            <div class='swiper-slide'>
+                                <img class= 'img' src='http://m.qiyipic.com/common/lego/20170510/983466362da440008f16b661879da334.jpg' alt='loading'/>
+                            </div>
+                            <div class='swiper-slide'>
+                                <img class= 'img' src='http://m.qiyipic.com/common/lego/20170515/949eac98d40d4e32b970ce5d5f3cba0d.jpg' alt='loading'/>
+                            </div>
+                            <div class='swiper-slide'>
+                                <img class= 'img' src='http://m.qiyipic.com/common/lego/20170512/73e33b0c73a24dada48aa4e74821f750.jpg' alt='loading'/>
+                            </div>  
+                        </div>
+                        <div class='swiper-pagination'></div>
+                    </div>               
+                </section>
+                <!--banner end-->
+                <!--mainNav begin-->
+                <section class="main-nav">
+                    <div id="mainNav" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                    会员中心
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                    热点
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                    游戏中心
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                    小说
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                    商城
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                    应用商店
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                     片单
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-box">
+                                    <img class= 'img' src="http://m.qiyipic.com/common/lego/20161202/a46f26845ed142b3ba960444f82e775a.png" alt="loading">
+                                </div>
+                                <div>
+                                     更多
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--mainNav end-->
+                <div class="line"></div>
+                <!--list begin-->
+                <section class="list">
+                    <div class="title">
+                        动漫
+                    </div>
+                    <div class="list-box">
+                        <ul class="list-box-ul">
+                            <li v-for="item in listData" class="list-box-ul-item">
+                                <div class="image-box">
+                                    <img class="img" :src="item.imageUrl" alt="loading">
+                                </div>
+                                <div>
+                                    {{item.name}}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!--list end-->
+            </div>
+       </div>
+    </body>
+    <script src="../../assests/require.js" data-main ="../../assests/router.js" defer async="true"></script>
+</html>

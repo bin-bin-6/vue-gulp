@@ -608,7 +608,8 @@ button.swiper-pagination-bullet {
   position: fixed;
   bottom: 0;
   height: 3rem;
-  background: #FAFAFA; }
+  background: #FAFAFA;
+  max-width: 960px; }
   .nav-box .nav-bar {
     display: -webkit-box;
     display: -webkit-flex;

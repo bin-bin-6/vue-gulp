@@ -5,7 +5,7 @@ require.config({
         jquery:'tools/jquery-2.1.4.min',
         app:'fun/app',
         des:'fun/des',
-        vue:'tools/vue.min',
+        vue:'tools/vue',
         swiper:'lib/swiper/js/swiper.min',
         boom:'lib/boom/boom'
     },

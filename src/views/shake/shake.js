@@ -36,7 +36,7 @@ define(['jquery', 'vue', 'des', 'boom'], function ($, Vue, des, url, Boom) {
                 if (this.btnActive) {
                     boom($('#logo'));
                     setTimeout(function () {
-                        if (confirm('恭喜您，摇完了10下!请问还要再摇一遍吗?')) {
+                        if (confirm('恭喜您，摇完了!请问还要再摇一遍吗?')) {
                             document.location.reload();
                         }
                     }, 2000);
