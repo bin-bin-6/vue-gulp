@@ -31,10 +31,6 @@ define(['jquery', 'vue', 'swiper'], function ($, Vue, swiper) {
         },
         mounted: function mounted() {
 
-            if (this.isWeiXin()) {
-                alert('请使用非微信浏览器打开该页面!');
-            }
-
             new Swiper('#headerNav', {
                 freeMode: true,
                 slidesPerView: 8
@@ -64,14 +60,6 @@ define(['jquery', 'vue', 'swiper'], function ($, Vue, swiper) {
             },
             focusInput: function focusInput() {
                 this.isFocus = true;
-            },
-            isWeiXin: function isWeiXin() {
-                var ua = window.navigator.userAgent.toLowerCase();
-                if (ua.match(/MicroMessenger/i) == 'micromessenger') {
-                    return true;
-                } else {
-                    return false;
-                }
             }
         }
     });
