@@ -39,10 +39,6 @@ define([
              ]
          },
          mounted(){
-            
-            if(this.isWeiXin()){
-                alert('请使用非微信浏览器打开该页面!');
-            }
 
             new Swiper('#headerNav', {
                 freeMode:true,
@@ -72,15 +68,7 @@ define([
              },
              focusInput(){
                  this.isFocus = true;
-             },
-             isWeiXin(){
-                var ua = window.navigator.userAgent.toLowerCase();
-                if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-                    return true;
-                }else{
-                    return false;
-                }
-            }
+             }
          }
     })
 
